@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-schedule-item',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScheduleItemComponent implements OnInit {
 
+  @Input()
+  timeStamp: string;
+  
   constructor() { }
 
   ngOnInit(): void {

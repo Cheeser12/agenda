@@ -1,0 +1,21 @@
+.container {
+    border: 1px solid black;
+    height: 75px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%;
+}
+
+.container > header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+}
+.container > .task {
+    border: none;
+    resize: none;
+}
+.container > .task:not(:last-child) {
+    border-right: 1px dotted black;
+}

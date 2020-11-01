@@ -44,3 +44,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+### DotnetCore ###
+# .NET Core build folders
+bin/
+obj/
